@@ -5,7 +5,7 @@
   <title>Estatutos de Grupo KOI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Configuración de desplazamiento suave */
+    /* Desplazamiento suave */
     html {
       scroll-behavior: smooth;
     }
@@ -41,8 +41,8 @@
 
     .indice-lista {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 8px;
       list-style: none;
       padding: 0;
     }
@@ -51,26 +51,26 @@
       text-decoration: none;
       color: #444;
       font-family: "Montserrat", sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       display: block;
-      padding: 8px 12px;
+      padding: 6px 10px;
       border-radius: 6px;
-      transition: all 0.3s ease; /* Animación */
+      transition: all 0.3s ease;
       border-left: 0 solid rgb(243, 144, 44);
     }
 
     .indice-lista li a:hover {
       background: rgba(243, 144, 44, 0.1);
       color: rgb(243, 144, 44);
-      padding-left: 20px; /* Efecto de desplazamiento */
+      padding-left: 18px;
       border-left: 4px solid rgb(243, 144, 44);
     }
 
-    /* Estilos de Títulos y Contenido */
+    /* Tipografía y Títulos */
     h1 {
       text-align: center;
       font-family: "Montserrat", Arial, sans-serif;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       text-transform: uppercase;
       border-bottom: 4px solid rgb(243, 144, 44);
       padding-bottom: 10px;
@@ -82,13 +82,14 @@
       padding-bottom: 6px;
       font-family: "Montserrat", Arial, sans-serif;
       text-transform: uppercase;
+      color: #222;
     }
 
     h3 {
-      margin-top: 40px;
-      text-align: center;
+      margin-top: 35px;
       font-family: "Montserrat", Arial, sans-serif;
-      color: #555;
+      color: #444;
+      text-align: center;
     }
 
     p {
@@ -100,6 +101,7 @@
       font-weight: bold;
       display: block;
       margin-top: 25px;
+      color: #000;
       text-transform: uppercase;
     }
 
@@ -112,12 +114,12 @@
       margin-bottom: 8px;
     }
 
-    /* Espaciado para que el título no quede tapado al navegar */
+    /* Margen para anclajes */
     h2::before {
       content: "";
       display: block;
-      height: 20px;
-      margin-top: -20px;
+      height: 30px;
+      margin-top: -30px;
     }
   </style>
 </head>
@@ -140,34 +142,85 @@
 
   <h2 id="t1">TÍTULO PRIMERO<br>DISPOSICIONES GENERALES</h2>
   <h3>CAPÍTULO 1<br>DE LA DENOMINACIÓN, NATURALEZA Y ÁMBITO</h3>
-  <p><span class="articulo-titulo">ARTÍCULO 1. DENOMINACIÓN</span> El presente estatuto regula la organización, funcionamiento y principios del movimiento estudiantil nacional en lo sucesivo denominado “Grupo KOI”.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 2. NATURALEZA JURÍDICA</span> El Grupo KOI es una organización estudiantil de carácter social, apartidista, autónoma, democrática, pacífica, imparcial, y sin fines de lucro.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 3. ÁMBITO DE ACCIÓN</span> El Grupo KOI tiene alcance nacional e internacional y podrá desarrollar actividades en instituciones educativas públicas y privadas.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 1. DENOMINACIÓN</span>
+  El presente estatuto regula la organización, funcionamiento y principios del movimiento estudiantil nacional en lo sucesivo denominado “Grupo KOI”.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 2. NATURALEZA JURÍDICA</span>
+  El Grupo KOI es una organización estudiantil de carácter social, apartidista, autónoma, democrática, pacífica, imparcial, y sin fines de lucro, que no persigue objetivos partidistas ni religiosos.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 3. ÁMBITO DE ACCIÓN</span>
+  El Grupo KOI tiene alcance nacional e internacional y podrá desarrollar actividades en instituciones educativas públicas y privadas desde el nivel medio superior.</p>
 
   <h2 id="t2">TÍTULO SEGUNDO<br>PRINCIPIOS, FINES Y OBJETIVOS</h2>
   <h3>CAPÍTULO 2<br>DE LOS PRINCIPIOS RECTORES</h3>
-  <p><span class="articulo-titulo">ARTÍCULO 4. PRINCIPIOS</span> Se rige por los principios de legalidad, democracia, participación estudiantil, equidad y transparencia.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 5. FINES</span> El fin principal es la defensa y promoción de los derechos del estudiantado.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 6. OBJETIVOS</span> Defender el derecho a una educación pública laica y fomentar la organización estudiantil.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 4. PRINCIPIOS</span>
+  El Grupo KOI se rige por los principios de legalidad, democracia, participación estudiantil, equidad, transparencia, rendición de cuentas, respeto de los derechos humanos y autonomía.</p>
+
+  <h3>CAPÍTULO 3<br>DE LOS FINES Y OBJETIVOS</h3>
+
+  <p><span class="articulo-titulo">ARTÍCULO 5. FINES</span>
+  El Grupo KOI tiene como fin la defensa y promoción de los derechos del estudiantado.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 6. OBJETIVOS</span>
+  Son objetivos del Grupo KOI:</p>
+  <ul class="lista-puntos">
+    <li>1. Defender el derecho a una educación pública laica y de calidad.</li>
+    <li>2. Representar y articular las demandas del estudiantado a nivel nacional e internacional.</li>
+    <li>3. Fomentar la organización y participación estudiantil.</li>
+    <li>4. Fomentar el diálogo, la incidencia pública y la acción colectiva pacífica.</li>
+  </ul>
 
   <h2 id="t3">TÍTULO TERCERO<br>DE LA ORGANIZACIÓN Y ESTRUCTURA</h2>
-  <p><span class="articulo-titulo">ARTÍCULO 7. ESTRUCTURA ORGANIZATIVA</span> Se organiza mediante Coordinación Nacional, Estatal y Supervisores.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 8. ÓRGANOS</span> a) Asamblea General, b) Consejo Coordinador, c) Comisiones de Trabajo, d) Representaciones locales.</p>
+  <h3>CAPÍTULO 4<br>DE LOS ÓRGANOS Y NIVELES</h3>
+
+  <p><span class="articulo-titulo">ARTÍCULO 7. ESTRUCTURA ORGANIZATIVA</span>
+  El Grupo KOI se organizará de manera jerárquica funcional con base en los siguientes niveles: Coordinación Nacional, Coordinación Estatal y Supervisores por área temática o región.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 8. ÓRGANOS DEL GRUPO KOI</span>
+  El Grupo KOI se conforma por los siguientes órganos: a) La Asamblea General; b) El Consejo Coordinador; c) Las Comisiones de Trabajo; d) Las representaciones locales.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 9. ASAMBLEA GENERAL</span>
+  La Asamblea General es el órgano máximo de deliberación y decisión del Grupo KOI, integrada por todas y todos sus miembros activos.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 10. FACULTADES DE LA ASAMBLEA GENERAL</span>
+  Corresponde a la Asamblea General: a) Definir la línea política y estratégica del movimiento; b) Aprobar reformas a los estatutos; c) Elegir y remover a los integrantes del Consejo Coordinador; d) Resolver conflictos internos de carácter grave.</p>
 
   <h2 id="t4">TÍTULO CUARTO<br>DE LA COORDINACIÓN Y COMISIONES</h2>
-  <p><span class="articulo-titulo">ARTÍCULO 9. CONSEJO COORDINADOR</span> Órgano ejecutivo encargado de ejecutar los acuerdos de la Asamblea General.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 10. COMISIONES DE TRABAJO</span> Órganos auxiliares para formación, comunicación, finanzas y derechos humanos.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 11. CONSEJO COORDINADOR</span>
+  El Consejo Coordinador es el órgano ejecutivo y de representación nacional del Grupo KOI, encargado de ejecutar los acuerdos de la Asamblea General.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 12. FUNCIONES DEL CONSEJO COORDINADOR</span>
+  Son funciones del Consejo Coordinador: a) Coordinar las acciones nacionales; b) Representar al Grupo KOI ante instancias externas; c) Convocar a la Asamblea General; d) Rendir informes periódicos de actividades y finanzas.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 13. COMISIONES DE TRABAJO</span>
+  Las Comisiones de Trabajo son órganos auxiliares creados para atender áreas específicas como formación política, comunicación, finanzas, derechos humanos u otras que determine la Asamblea.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 14. REPRESENTACIONES LOCALES</span>
+  Las representaciones locales podrán conformarse en instituciones educativas o regiones, siempre que respeten los principios y estatutos del Grupo KOI.</p>
 
   <h2 id="t5">TÍTULO QUINTO<br>DE LOS INTEGRANTES</h2>
-  <p><span class="articulo-titulo">ARTÍCULO 11. CALIDAD DE MIEMBRO</span> Cualquier estudiante que comparta los principios y participe activamente.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 12. DERECHOS Y OBLIGACIONES</span> Voz y voto en asambleas, proponer iniciativas y respetar los acuerdos adoptados.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 15. MIEMBROS Y ADHESIÓN</span>
+  Podrá ser miembro cualquier estudiante que comparta sus principios, acepte sus estatutos y participe activamente en sus actividades.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 16. DERECHOS DE LOS MIEMBROS</span>
+  Son derechos de los miembros: a) Participar con voz y voto en la Asamblea General; b) Proponer iniciativas y proyectos; c) Elegir y ser electos para cargos internos.</p>
+
+  <p><span class="articulo-titulo">ARTÍCULO 17. OBLIGACIONES DE LOS MIEMBROS</span>
+  Son obligaciones: a) Respetar los estatutos y acuerdos; b) Actuar conforme a los principios de KOI; c) Contribuir de manera solidaria a las actividades del movimiento.</p>
 
   <h2 id="t6">TÍTULO SEXTO<br>RÉGIMEN DISCIPLINARIO</h2>
-  <p><span class="articulo-titulo">ARTÍCULO 13. FALTAS Y SANCIONES</span> Acciones contra los estatutos serán sancionadas con amonestación, suspensión o expulsión.</p>
 
-  <h2 id="t7">TÍTULO SÉPTIMO<br>REFORMAS Y VIGENCIA</h2>
-  <p><span class="articulo-titulo">ARTÍCULO 14. REFORMAS</span> Solo podrán ser reformados por acuerdo de la Asamblea General.</p>
-  <p><span class="articulo-titulo">ARTÍCULO 15. VIGENCIA</span> Entran en vigor a partir de su aprobación oficial por la Asamblea.</p>
+  <p><span class="articulo-titulo">ARTÍCULO 18. FALTAS Y SANCIONES</span>
+  Se consideran faltas aquellas acciones que contravengan los principios del Grupo. Las sanciones consistirán en amonestación, suspensión o expulsión, garantizando el derecho de audiencia.</p>
+
+  <h2 id="t7">TÍTULO SÉPTIMO<br>REFORMAS Y DISPOSICIONES FINALES</h2>
+
+  <p><span class="articulo-titulo">ARTÍCULO 19. REFORMA Y VIGENCIA</span>
+  Los presentes estatutos sólo podrán ser reformados por la Asamblea General y entrarán en vigor a partir de su aprobación oficial por los órganos correspondientes.</p>
 
 </body>
 </html>
