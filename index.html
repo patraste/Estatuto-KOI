@@ -2,427 +2,569 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Estatutos de Grupo KOI - Completo</title>
+  <title>Estatutos de Grupo KOI - Documento Completo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Suavizado de desplazamiento */
+    /* --- CONFIGURACIÓN GENERAL --- */
     html {
       scroll-behavior: smooth;
     }
-
+    
     body {
-      background-color: rgb(251, 251, 242);
+      background-color: rgb(251, 251, 242); /* Fondo crema suave */
       font-family: "Georgia", serif;
-      line-height: 1.7;
-      margin: 40px auto;
-      max-width: 950px;
-      color: #111;
-      padding: 0 25px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+      color: #222;
     }
 
-    /* ÍNDICE ANIMADO */
-    .indice-contenedor {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      border-top: 6px solid rgb(243, 144, 44);
-      margin: 40px 0 70px 0;
-    }
-
-    .indice-contenedor h3 {
-      margin-top: 0;
-      text-align: center;
-      color: rgb(243, 144, 44);
-      font-family: "Montserrat", sans-serif;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 15px;
-    }
-
-    .indice-lista {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 12px;
-      list-style: none;
-      padding: 0;
-      margin-top: 20px;
-    }
-
-    .indice-lista li a {
-      text-decoration: none;
-      color: #333;
-      font-family: "Montserrat", sans-serif;
-      font-size: 0.85rem;
-      display: block;
-      padding: 10px 15px;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff; /* Fondo blanco para el papel */
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
       border-radius: 8px;
-      transition: all 0.3s ease;
-      background: #f9f9f9;
     }
 
-    .indice-lista li a:hover {
-      background: rgb(243, 144, 44);
-      color: white;
-      transform: translateX(10px);
-      box-shadow: 0 4px 10px rgba(243, 144, 44, 0.3);
-    }
-
-    /* ESTILOS DE TÍTULOS */
+    /* --- TIPOGRAFÍA --- */
     h1 {
       text-align: center;
       font-family: "Montserrat", Arial, sans-serif;
-      margin-bottom: 50px;
+      color: #111;
       text-transform: uppercase;
+      border-bottom: 5px solid rgb(243, 144, 44);
+      padding-bottom: 20px;
+      margin-bottom: 40px;
       font-size: 2.2rem;
-      color: #000;
     }
 
     h2 {
-      margin-top: 100px;
-      border-bottom: 3px solid rgb(243, 144, 44);
-      padding-bottom: 10px;
+      margin-top: 60px;
+      background-color: rgb(243, 144, 44);
+      color: white;
+      padding: 10px 15px;
       font-family: "Montserrat", Arial, sans-serif;
       text-transform: uppercase;
-      color: #222;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      letter-spacing: 1px;
     }
 
     h3 {
-      margin-top: 50px;
+      margin-top: 30px;
+      color: rgb(200, 100, 10);
       font-family: "Montserrat", Arial, sans-serif;
-      color: rgb(243, 144, 44);
-      text-align: center;
-      background: rgba(243, 144, 44, 0.05);
-      padding: 10px;
-      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
     }
 
-    /* CUERPO DE TEXTO */
     p {
-      margin: 18px 0;
+      margin-bottom: 15px;
       text-align: justify;
     }
 
-    .articulo-cabecera {
-      font-weight: bold;
+    /* --- ESTILO DE ARTÍCULOS --- */
+    .articulo-titulo {
       display: block;
-      margin-top: 30px;
+      font-weight: bold;
       color: #000;
-      text-transform: uppercase;
-      font-size: 1rem;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-family: "Montserrat", sans-serif;
     }
 
-    .num-lista {
-      padding-left: 25px;
+    .lista-numerada {
+      list-style-type: none;
+      padding-left: 0;
       margin: 10px 0;
     }
 
-    /* Ajuste para anclajes (evita que el título quede oculto por el borde superior) */
+    .lista-numerada li {
+      margin-bottom: 8px;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    /* --- ÍNDICE INTERACTIVO --- */
+    .indice-box {
+      background-color: #f4f4f4;
+      border-left: 6px solid rgb(243, 144, 44);
+      padding: 20px;
+      margin-bottom: 50px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .indice-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      display: block;
+      color: #333;
+    }
+
+    .indice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .indice-link {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.85rem;
+      font-family: "Montserrat", sans-serif;
+      padding: 8px 10px;
+      background: white;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+    }
+
+    .indice-link:hover {
+      background: rgb(243, 144, 44);
+      color: white;
+      transform: translateX(5px);
+    }
+
+    /* Ajuste para que el título no quede tapado por el borde superior al hacer scroll */
     h2::before {
       content: "";
       display: block;
-      height: 40px;
-      margin-top: -40px;
+      height: 20px; 
+      margin-top: -20px; 
+      visibility: hidden;
     }
 
-    @media (max-width: 600px) {
-      .indice-lista {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <h1>ESTATUTOS DE GRUPO KOI</h1>
+<div class="container">
 
-  <div class="indice-contenedor">
-    <h3>Índice Interactivo</h3>
-    <ul class="indice-lista">
-      <li><a href="#t1">I. Disposiciones Generales</a></li>
-      <li><a href="#t2">II. Principios, Fines y Objetivos</a></li>
-      <li><a href="#t3">III. De los Integrantes</a></li>
-      <li><a href="#t4">IV. Organización y Estructura</a></li>
-      <li><a href="#t5">V. Coordinación y Representación</a></li>
-      <li><a href="#t6">VI. Toma de Decisiones</a></li>
-      <li><a href="#t7">VII. Comisiones de Trabajo</a></li>
-      <li><a href="#t8">VIII. Transparencia y Cuentas</a></li>
-      <li><a href="#t9">IX. Disciplina y Responsabilidad</a></li>
-      <li><a href="#t10">X. Comunicación y Vocería</a></li>
-      <li><a href="#t11">XI. Relaciones Externas</a></li>
-      <li><a href="#t12">XII. Manejo de Crisis</a></li>
-      <li><a href="#t13">XIII. Perspectiva de Derechos</a></li>
-      <li><a href="#t14">XIV. Afiliación y Bajas</a></li>
-      <li><a href="#t15">XV. Reformas y Vigencia</a></li>
-    </ul>
+  <h1>Estatutos de Grupo KOI</h1>
+
+  <div class="indice-box">
+    <span class="indice-title">Índice de Contenidos</span>
+    <div class="indice-grid">
+      <a class="indice-link" href="#t1">I. Disposiciones Generales</a>
+      <a class="indice-link" href="#t2">II. Principios y Objetivos</a>
+      <a class="indice-link" href="#t3">III. De los Integrantes</a>
+      <a class="indice-link" href="#t4">IV. Organización y Estructura</a>
+      <a class="indice-link" href="#t5">V. Coordinación Nacional</a>
+      <a class="indice-link" href="#t6">VI. Toma de Decisiones</a>
+      <a class="indice-link" href="#t7">VII. Comisiones de Trabajo</a>
+      <a class="indice-link" href="#t8">VIII. Transparencia</a>
+      <a class="indice-link" href="#t9">IX. Disciplina</a>
+      <a class="indice-link" href="#t10">X. Comunicación y Vocería</a>
+      <a class="indice-link" href="#t11">XI. Relaciones Externas</a>
+      <a class="indice-link" href="#t12">XII. Crisis y Contingencias</a>
+      <a class="indice-link" href="#t13">XIII. Perspectiva de Derechos</a>
+      <a class="indice-link" href="#t14">XIV. Afiliación y Baja</a>
+      <a class="indice-link" href="#t15">XV. Reformas y Vigencia</a>
+    </div>
   </div>
-
-  <hr>
 
   <h2 id="t1">TÍTULO PRIMERO<br>DISPOSICIONES GENERALES</h2>
+  
   <h3>CAPÍTULO 1<br>DE LA DENOMINACIÓN, NATURALEZA Y ÁMBITO</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 1. DENOMINACIÓN</span>
+    El presente estatuto regula la organización, funcionamiento y principios del movimiento estudiantil nacional en lo sucesivo denominado “Grupo KOI”.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 2. NATURALEZA JURÍDICA</span>
+    El Grupo KOI es una organización estudiantil de carácter social, apartidista, autónoma, democrática, pacífica, imparcial, y sin fines de lucro, que no persigue objetivos partidistas ni religiosos.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 3. ÁMBITO DE ACCIÓN</span>
+    El Grupo KOI tiene alcance nacional e internacional y podrá desarrollar actividades en instituciones educativas públicas y privadas desde el nivel medio superior.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 1. DENOMINACIÓN</span>
-  El presente estatuto regula la organización, funcionamiento y principios del movimiento estudiantil nacional en lo sucesivo denominado “Grupo KOI”.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 2. NATURALEZA JURÍDICA</span>
-  El Grupo KOI es una organización estudiantil de carácter social, apartidista, autónoma, democrática, pacífica, imparcial, y sin fines de lucro, que no persigue objetivos partidistas ni religiosos.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 3. ÁMBITO DE ACCIÓN</span>
-  El Grupo KOI tiene alcance nacional e internacional y podrá desarrollar actividades en instituciones educativas públicas y privadas desde el nivel medio superior.</p>
 
   <h2 id="t2">TÍTULO SEGUNDO<br>PRINCIPIOS, FINES Y OBJETIVOS</h2>
+  
   <h3>CAPÍTULO 2<br>DE LOS PRINCIPIOS RECTORES</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 4. PRINCIPIOS</span>
-  El Grupo KOI se rige por los principios de legalidad, democracia, participación estudiantil, equidad, transparencia, rendición de cuentas, respeto de los derechos humanos y autonomía.</p>
-
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 4. PRINCIPIOS</span>
+    El Grupo KOI se rige por los principios de legalidad, democracia, participación estudiantil, equidad, transparencia, rendición de cuentas, respeto de los derechos humanos y autonomía.
+  </p>
+  
   <h3>CAPÍTULO 3<br>DE LOS FINES Y OBJETIVOS</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 5. FINES</span>
+    El Grupo KOI tiene como fin la defensa y promoción de los derechos del estudiantado.
+  </p>
+  
+  <span class="articulo-titulo">ARTÍCULO 6. OBJETIVOS</span>
+  <p>Son objetivos del Grupo KOI:</p>
+  <ul class="lista-numerada">
+    <li>1.- Defender el derecho a una educación pública laica y de calidad.</li>
+    <li>2.- Representar y articular las demandas del estudiantado a nivel nacional e internacional.</li>
+    <li>3.- Fomentar la organización y participación estudiantil.</li>
+    <li>4.- Fomentar el diálogo, la incidencia pública y la acción colectiva pacífica.</li>
+  </ul>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 5. FINES</span>
-  El Grupo KOI tiene como fin la defensa y promoción de los derechos del estudiantado.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 6. OBJETIVOS</span>
-  Son objetivos del Grupo KOI:</p>
-  <div class="num-lista">
-    1.- Defender el derecho a una educación pública laica y de calidad.<br>
-    2.- Representar y articular las demandas del estudiantado a nivel nacional e internacional.<br>
-    3.- Fomentar la organización y participación estudiantil.<br>
-    4.- Fomentar el diálogo, la incidencia pública y la acción colectiva pacífica.
-  </div>
 
   <h2 id="t3">TÍTULO TERCERO<br>DE LOS INTEGRANTES</h2>
+  
   <h3>CAPÍTULO 4<br>DE LA CALIDAD DE INTEGRANTE</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 7. CALIDAD</span>
-  Podrán formar parte del Grupo KOI las y los estudiantes que manifiesten su adhesión a los principios, fines y disposiciones del presente Estatuto.</p>
-
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 7.</span>
+    Podrán formar parte del Grupo KOI las y los estudiantes que manifiesten su adhesión a los principios, fines y disposiciones del presente Estatuto.
+  </p>
+  
   <h3>CAPÍTULO 5<br>DE LOS DERECHOS Y OBLIGACIONES</h3>
+  
+  <span class="articulo-titulo">ARTÍCULO 8. DERECHOS</span>
+  <p>Son derechos de las personas integrantes:</p>
+  <ul class="lista-numerada">
+    <li>1.- Participar con voz y voto en los órganos de decisión.</li>
+    <li>2.- Presentar propuestas, iniciativas y observaciones.</li>
+    <li>3.- Acceder a información sobre las actividades y recursos del Grupo KOI.</li>
+  </ul>
+  
+  <span class="articulo-titulo">ARTÍCULO 9. OBLIGACIONES</span>
+  <p>Son obligaciones de las personas integrantes:</p>
+  <ul class="lista-numerada">
+    <li>1.- Cumplir y respetar los acuerdos válidamente adoptados.</li>
+    <li>2.- Conducirse conforme a los principios del Grupo KOI.</li>
+    <li>3.- Abstenerse de utilizar al Grupo KOI con fines personales, económicos o ajenos a sus objetivos.</li>
+  </ul>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 8. DERECHOS</span>
-  Son derechos de las personas integrantes:</p>
-  <div class="num-lista">
-    1.- Participar con voz y voto en los órganos de decisión.<br>
-    2.- Presentar propuestas, iniciativas y observaciones.<br>
-    3.- Acceder a información sobre las actividades y recursos del Grupo KOI.
-  </div>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 9. OBLIGACIONES</span>
-  Son obligaciones de las personas integrantes:</p>
-  <div class="num-lista">
-    1.- Cumplir y respetar los acuerdos válidamente adoptados.<br>
-    2.- Conducirse conforme a los principios del Grupo KOI.<br>
-    3.- Abstenerse de utilizar al Grupo KOI con fines personales, económicos o ajenos a sus objetivos.
-  </div>
 
   <h2 id="t4">TÍTULO CUARTO<br>DE LA ORGANIZACIÓN Y ESTRUCTURA</h2>
+  
   <h3>CAPÍTULO 6<br>DE LA ESTRUCTURA ORGÁNICA DEL MOVIMIENTO</h3>
+  
+  <span class="articulo-titulo">ARTÍCULO 10. ESTRUCTURA ORGANIZATIVA</span>
+  <p>El Grupo KOI se organizará de manera jerárquica funcional con base en los siguientes niveles de organización:</p>
+  <ul class="lista-numerada">
+    <li>1.- Coordinación Nacional.</li>
+    <li>2.- Coordinación Estatal.</li>
+    <li>3.- Supervisores por área temática o región.</li>
+  </ul>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 11. PRINCIPIOS DE ORGANIZACIÓN</span>
+    La estructura del Grupo KOI se rige por los principios de coordinación, corresponsabilidad, rendición de cuentas y sujeción a los lineamientos nacionales.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 10. ESTRUCTURA ORGANIZATIVA</span>
-  El Grupo KOI se organizará de manera jerárquica funcional con base en los siguientes niveles de organización:</p>
-  <div class="num-lista">
-    1.- Coordinación Nacional.<br>
-    2.- Coordinación Estatal.<br>
-    3.- Supervisores por área temática o región.
-  </div>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 11. PRINCIPIOS DE ORGANIZACIÓN</span>
-  La estructura del Grupo KOI se rige por los principios de coordinación, corresponsabilidad, rendición de cuentas y sujeción a los lineamientos nacionales.</p>
 
   <h2 id="t5">TÍTULO QUINTO<br>DE LA COORDINACIÓN Y REPRESENTACIÓN</h2>
+  
   <h3>CAPÍTULO 7<br>DE LOS COORDINADORES NACIONALES</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 12. COORDINADORES NACIONALES</span>
-  El Grupo KOI contará con coordinadores nacionales, quienes conforman la coordinación nacional y son responsables de la conducción, dirección y articulación general del Grupo KOI.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 13. FUNCIONES DE LOS COORDINADORES NACIONALES</span>
-  Son funciones de los Coordinadores Nacionales:</p>
-  <div class="num-lista">
-    1.- Definir la estrategia nacional y los lineamientos generales del Grupo KOI.<br>
-    2.- Coordinar y supervisar el trabajo de las Coordinaciones Estatales y de las Supervisiones.<br>
-    3.- Representar al Grupo KOI ante instancias externas de carácter nacional e internacional.<br>
-    4.- Convocar y presidir los espacios de deliberación y coordinación.<br>
-    5.- Velar por el cumplimiento del presente estatuto.
-  </div>
-
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 12. COORDINADORES NACIONALES</span>
+    El Grupo KOI contará con coordinadores nacionales, quienes conforman la coordinación nacional y son responsables de la conducción, dirección y articulación general del Grupo KOI.
+  </p>
+  
+  <span class="articulo-titulo">ARTÍCULO 13. FUNCIONES DE LOS COORDINADORES NACIONALES</span>
+  <p>Son funciones de los Coordinadores Nacionales:</p>
+  <ul class="lista-numerada">
+    <li>1.- Definir la estrategia nacional y los lineamientos generales del Grupo KOI.</li>
+    <li>2.- Coordinar y supervisar el trabajo de las Coordinaciones Estatales y de las Supervisiones.</li>
+    <li>3.- Representar al Grupo KOI ante instancias externas de carácter nacional e internacional.</li>
+    <li>4.- Convocar y presidir los espacios de deliberación y coordinación.</li>
+    <li>5.- Velar por el Cumplimiento del presente estatuto.</li>
+  </ul>
+  
   <h3>CAPÍTULO 8<br>DE LOS COORDINADORES ESTATALES</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 15. COORDINADORES ESTATALES</span>
-  El Grupo KOI contará con Coordinadores Estatales en cada entidad federativa donde tenga presencia, quienes serán responsables de la organización, representación y ejecución de los acuerdos en su respectivo ámbito territorial.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 16. FUNCIONES DE LOS COORDINADORES ESTATALES</span>
-  Son funciones de los Coordinadores Estatales:</p>
-  <div class="num-lista">
-    1.- Implementar los lineamientos y acuerdos emitidos por la coordinación nacional.<br>
-    2.- Coordinar las actividades del Grupo KOI a nivel estatal.<br>
-    3.- Representar al Grupo KOI ante instancias estatales y locales.<br>
-    4.- Coordinar las demandas y propuestas estatales a la Coordinación Nacional.<br>
-    5.- Rendir informes periódicos a la Coordinación Nacional.
-  </div>
-
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 15. COORDINADORES ESTATALES</span>
+    El Grupo KOI contará con Coordinadores Estatales en cada entidad federativa donde tenga presencia, quienes serán responsables de la organización, representación y ejecución de los acuerdos del Grupo KOI en su respectivo ámbito territorial.
+  </p>
+  
+  <span class="articulo-titulo">ARTÍCULO 16. FUNCIONES DE LOS COORDINADORES ESTATALES</span>
+  <p>Son funciones de los Coordinadores Estatales:</p>
+  <ul class="lista-numerada">
+    <li>1.- Implementar los lineamientos y acuerdos emitidos por la coordinación nacional.</li>
+    <li>2.- Coordinar las actividades del Grupo KOI a nivel estatal.</li>
+    <li>3.- Representar al Grupo KOI ante instancias estatales y locales.</li>
+    <li>4.- Coordinar las demandas y propuestas estatales a la Coordinación Nacional.</li>
+    <li>5.- Rendir informes periódicos a la Coordinación Nacional.</li>
+  </ul>
+  
   <h3>CAPÍTULO 9<br>DE LOS SUPERVISORES</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 17. SUPERVISORES</span>
+    El Grupo KOI contará con Supervisores por área temática o región, quienes serán el vínculo directo entre el Grupo KOI y el estudiantado en las instituciones educativas, encargados del seguimiento, acompañamiento, y evaluación del trabajo organizativo en campo.
+  </p>
+  
+  <span class="articulo-titulo">ARTÍCULO 18. FUNCIONES DE LOS SUPERVISORES</span>
+  <p>Son funciones de los supervisores:</p>
+  <ul class="lista-numerada">
+    <li>1.- Mantener contacto directo y permanente con las y los estudiantes en las instituciones educativas donde el Grupo KOI tenga presencia.</li>
+    <li>2.- Dar seguimiento a las problemáticas, necesidades y propuestas del estudiantado.</li>
+    <li>3.- Coordinarse directamente con las Coordinaciones Estatales para la atención y canalización de dichas problemáticas.</li>
+    <li>4.- Elaborar y rendir informes periódicos a la Coordinación Estatal correspondiente.</li>
+    <li>5.- Apoyar la implementación de los acuerdos y lineamientos emitidos por las Coordinaciones Estatales.</li>
+    <li>6.- Coadyuvar en la organización de actividades, asambleas y acciones del Grupo KOI a nivel escolar o regional.</li>
+  </ul>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 17. SUPERVISORES</span>
-  El Grupo KOI contará con Supervisores por área temática o región, quienes serán el vínculo directo con el estudiantado en las instituciones educativas, encargados del seguimiento, acompañamiento, y evaluación del trabajo en campo.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 18. FUNCIONES DE LOS SUPERVISORES</span>
-  Son funciones de los supervisores:</p>
-  <div class="num-lista">
-    1.- Mantener contacto directo con estudiantes donde el Grupo KOI tenga presencia.<br>
-    2.- Dar seguimiento a las problemáticas, necesidades y propuestas del estudiantado.<br>
-    3.- Coordinarse con las Coordinaciones Estatales para la canalización de problemáticas.<br>
-    4.- Elaborar y rendir informes periódicos.<br>
-    5.- Apoyar la implementación de los acuerdos emitidos por las Coordinaciones Estatales.<br>
-    6.- Coadyuvar en la organización de actividades y asambleas a nivel escolar.
-  </div>
 
   <h2 id="t6">TÍTULO SEXTO<br>DE LA TOMA DE DECISIONES</h2>
+  
   <h3>CAPÍTULO 10<br>DE LOS MECANISMOS DE DECISIÓN</h3>
+  
+  <span class="articulo-titulo">ARTÍCULO 19. MODALIDADES DE DECISIÓN</span>
+  <p>Las decisiones del Grupo KOI se adoptarán mediante votación y podrán realizarse bajo las siguientes modalidades:</p>
+  <ul class="lista-numerada">
+    <li>1.- Votación conjunta de las y los Coordinadores Nacionales y Estatales.</li>
+    <li>2.- Votación Exclusiva de las y los Coordinadores Nacionales cuando se trate de asuntos de carácter estratégico, urgente o de especial relevancia para el Grupo KOI.</li>
+  </ul>
+  
+  <span class="articulo-titulo">ARTÍCULO 20. MATERIAS SUJETAS A DECISIÓN</span>
+  <p>Serán materias de decisión entre otras:</p>
+  <ul class="lista-numerada">
+    <li>1.- La aprobación de acciones colectivas como marchas, movilizaciones, pronunciamientos y actividades públicas, ya sean de carácter nacional, estatal o local.</li>
+    <li>2.- La adopción de decisiones de alto impacto o trascendencia para el Grupo KOI.</li>
+    <li>3.- La definición de posicionamientos nacionales.</li>
+    <li>4.- La aprobación de planes de acción para la atención de problemáticas que afecten al estudiantado, a una entidad federativa o al país en general.</li>
+  </ul>
+  
+  <span class="articulo-titulo">ARTÍCULO 21. ACTUACIÓN ANTE PROBLEMAS</span>
+  <p>Cuando se presenten problemáticas que afecten de manera general al país o de forma particular a una o más entidades el Grupo KOI deberá:</p>
+  <ul class="lista-numerada">
+    <li>1.- Analizar la situación a partir de los informes presentados por los Coordinadores Estatales y Supervisores.</li>
+    <li>2.- Definir un plan de acción coordinado conforme el ámbito de la problemática.</li>
+    <li>3.- Determinar, mediante votación, las acciones y posicionamientos que corresponden a nivel estatal o nacional.</li>
+  </ul>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 22. MAYORÍAS REQUERIDAS</span>
+    Las decisiones se considerarán válidamente aprobadas cuando cuenten con el voto favorable de al menos sesenta por ciento (60%) de las personas con derecho a voto.<br>
+    Tratándose de reformas, adiciones o modificaciones al presente Estatuto, se requerirá una mayoría calificada no menor al ochenta por ciento (80%) de la votación correspondiente.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 23. VALIDEZ DE LAS DECISIONES</span>
+    Las decisiones adoptadas conforme a este Estatuto serán obligatorias para todas las estructuras del Grupo KOI.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 19. MODALIDADES DE DECISIÓN</span>
-  Las decisiones se adoptarán mediante votación bajo las siguientes modalidades:</p>
-  <div class="num-lista">
-    1.- Votación conjunta de Coordinadores Nacionales y Estatales.<br>
-    2.- Votación exclusiva de Coordinadores Nacionales para asuntos estratégicos o urgentes.
-  </div>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 20. MATERIAS SUJETAS A DECISIÓN</span>
-  Serán materias de decisión: La aprobación de acciones colectivas, marchas, posicionamientos nacionales y planes de acción para atender problemáticas estudiantiles.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 21. ACTUACIÓN ANTE PROBLEMAS</span>
-  Cuando se presenten problemáticas generales, se deberá analizar la situación con informes de Supervisores, definir un plan coordinado y determinar mediante votación las acciones a seguir.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 22. MAYORÍAS REQUERIDAS</span>
-  Las decisiones requieren el voto favorable del 60% de las personas con derecho a voto. Para reformas al Estatuto, se requerirá una mayoría calificada del 80%.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 23. VALIDEZ DE LAS DECISIONES</span>
-  Las decisiones adoptadas conforme a este Estatuto serán obligatorias para todas las estructuras del Grupo KOI.</p>
 
   <h2 id="t7">TÍTULO SÉPTIMO<br>DE LAS COMISIONES DE TRABAJO</h2>
-  <h3>CAPÍTULO 10 bis<br>DE SU INTEGRACIÓN Y FUNCIONAMIENTO</h3>
+  
+  <h3>CAPÍTULO 11<br>DE SU INTEGRACIÓN Y FUNCIONAMIENTO</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 24. NATURALEZA</span>
+    Las comisiones de trabajo son órganos auxiliares del Grupo KOI, encargados de apoyar la planeación, ejecución, seguimiento y evaluación de las acciones, acuerdos y estrategias del movimiento.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 25. OBJETO</span>
+    Las comisiones de trabajo tendrán por objeto fortalecer el funcionamiento interno del Grupo KOI, garantizar el cumplimiento de sus fines y facilitar la participación organizada de sus integrantes.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 26. INTEGRACIÓN</span>
+    Las comisiones de trabajo se integrarán por personas integrantes del Grupo KOI designadas por la Coordinación Nacional, pudiendo participar Coordinadores Estatales y Supervisores y demás integrantes conforme a su perfil y experiencia.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 27. DESIGNACIÓN Y DURACIÓN</span>
+    La Coordinación Nacional determinará la creación, integración, responsables y duración de cada comisión, atendiendo las necesidades del Grupo KOI.
+  </p>
+  
+  <span class="articulo-titulo">ARTÍCULO 28. FUNCIONES GENERALES</span>
+  <p>Son funciones generales de las comisiones de trabajo:</p>
+  <ul class="lista-numerada">
+    <li>1.- Elaborar diagnósticos, propuestas y planes de acción.</li>
+    <li>2.- Ejecutar los acuerdos aprobados por los órganos de decisión.</li>
+    <li>3.- Coordinarse con las estructuras nacionales y estatales.</li>
+    <li>4.- Rendir informes periódicos de sus actividades.</li>
+  </ul>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 29. LÍMITES DE ACTUACIÓN</span>
+    Las comisiones de trabajo no podrán asumir funciones ni tomar decisiones que corresponda a los órganos de coordinación, debiendo sujetarse en todo momento al presente Estatuto.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 24. NATURALEZA</span>
-  Las comisiones son órganos auxiliares encargados de apoyar la planeación, ejecución y seguimiento de las estrategias del movimiento.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 25. OBJETO</span>
-  Fortalecer el funcionamiento interno y garantizar el cumplimiento de los fines del Grupo KOI.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 26. INTEGRACIÓN</span>
-  Designadas por la Coordinación Nacional, integradas por miembros, coordinadores y supervisores según su perfil.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 27. DESIGNACIÓN Y DURACIÓN</span>
-  La Coordinación Nacional determina su creación, responsables y duración según las necesidades.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 28. FUNCIONES GENERALES</span>
-  Elaborar diagnósticos, ejecutar acuerdos, coordinarse con estructuras estatales y rendir informes.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 29. LÍMITES DE ACTUACIÓN</span>
-  No podrán asumir funciones ni tomar decisiones que correspondan a los órganos de coordinación superior.</p>
 
   <h2 id="t8">TÍTULO OCTAVO<br>DE LA TRANSPARENCIA Y RENDICIÓN DE CUENTAS</h2>
-  <h3>CAPÍTULO 11<br>DE LA INFORMACIÓN Y LOS INFORMES</h3>
+  
+  <h3>CAPÍTULO 12<br>DE LA INFORMACIÓN Y LOS INFORMES</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 30. PRINCIPIO DE TRANSPARENCIA</span>
+    El Grupo KOI se regirá por el principio de transparencia en el desarrollo de sus actividades, decisiones y acciones.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 31. OBLIGACIÓN DE INFORMAR</span>
+    Las Coordinaciones Nacionales, Estatales, Supervisores y comisiones de trabajo deberán rendir informes periódicos sobre sus actividades.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 32. ACCESO A LA INFORMACIÓN</span>
+    Las personas integrantes del Grupo KOI tendrán derecho a acceder a la información relativa a las decisiones del movimiento, conforme a los lineamientos internos.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 30. PRINCIPIO DE TRANSPARENCIA</span>
-  El Grupo KOI se regirá por este principio en todas sus actividades y decisiones.</p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 31. OBLIGACIÓN DE INFORMAR</span>
-  Todas las coordinaciones y comisiones deben rendir informes periódicos sobre sus actividades.</p>
+  <h2 id="t9">TÍTULO NOVENO<br>DEL CUMPLIMIENTO DEL ESTATUTO, DISCIPLINA Y RESPONSABILIDAD</h2>
+  
+  <h3>CAPÍTULO 13<br>CUMPLIMIENTO DEL ESTATUTO</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 33. OBLIGATORIEDAD</span>
+    El presente Estatuto es de observancia obligatoria para todas las personas integrantes y estructuras del Grupo KOI.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 34. RESPONSABILIDAD</span>
+    Toda persona integrante será responsable de sus actos y omisiones dentro del Grupo KOI.
+  </p>
+  
+  <h3>CAPÍTULO 14<br>DEL PROCEDIMIENTO DISCIPLINARIO</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 35. OBJETO</span>
+    El procedimiento disciplinario tiene por objeto preservar los principios, fines e integridad del Grupo KOI.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 36. FALTAS</span>
+    Las faltas podrán ser leves o graves, atendiendo a la conducta y el impacto generado.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 37. SANCIONES</span>
+    Las sanciones podrán consistir en amonestación, suspensión temporal o separación definitiva, garantizando en todo momento el derecho de audiencia.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 32. ACCESO A LA INFORMACIÓN</span>
-  Las y los integrantes tienen derecho a acceder a la información relativa a las decisiones del movimiento.</p>
-
-  <h2 id="t9">TÍTULO NOVENO<br>DEL CUMPLIMIENTO, DISCIPLINA Y RESPONSABILIDAD</h2>
-  <h3>CAPÍTULO 12<br>CUMPLIMIENTO DEL ESTATUTO</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 33. OBLIGATORIEDAD</span>
-  Este Estatuto es de observancia obligatoria para todas las personas y estructuras de KOI.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 34. RESPONSABILIDAD</span>
-  Toda persona integrante será responsable de sus actos y omisiones dentro del movimiento.</p>
-
-  <h3>CAPÍTULO 13<br>DEL PROCEDIMIENTO DISCIPLINARIO</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 35. OBJETO</span>
-  Preservar los principios, fines e integridad del Grupo KOI.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 36. FALTAS</span>
-  Podrán ser leves o graves, atendiendo a la conducta y el impacto generado.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 37. SANCIONES</span>
-  Consistirán en amonestación, suspensión temporal o separación definitiva, garantizando el derecho de audiencia.</p>
 
   <h2 id="t10">TÍTULO DÉCIMO<br>DE LA COMUNICACIÓN OFICIAL Y VOCERÍA</h2>
-  <h3>CAPÍTULO 14<br>DE LA COMUNICACIÓN INSTITUCIONAL</h3>
+  
+  <h3>CAPÍTULO 15<br>DE LA COMUNICACIÓN INSTITUCIONAL</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 38. COMUNICACIÓN OFICIAL</span>
+    La comunicación oficial del Grupo KOI se realizará principalmente a través de redes sociales oficiales, conforme a los lineamientos establecidos por la Coordinación Nacional.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 39. REDES SOCIALES</span>
+    La difusión de información, posicionamientos y actividades del Grupo KOI se realizará principalmente a través de redes sociales oficiales, conforme a los lineamientos establecidos por la Coordinación Nacional.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 40. VOCERÍA</span>
+    Solo las personas expresamente designadas podrán fungir como voceras del Grupo KOI ante medios de comunicación y plataformas digitales.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 38. COMUNICACIÓN OFICIAL</span>
-  Se realizará a través de redes sociales oficiales conforme a los lineamientos de la Coordinación Nacional.</p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 39. REDES SOCIALES</span>
-  La difusión de información y posicionamientos se hará prioritariamente por canales digitales autorizados.</p>
+  <h2 id="t11">TÍTULO DECIMOPRIMERO<br>DE LAS RELACIONES CON OTRAS ORGANIZACIONES</h2>
+  
+  <h3>CAPÍTULO 16<br>DE LA VINCULACIÓN</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 41. APOYO A PROBLEMÁTICAS</span>
+    El Grupo KOI podrá manifestar apoyo y solidaridad con diversas problemáticas sociales y estudiantiles, sin que ello implique necesariamente una alianza formal con otras organizaciones.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 42. ALIANZAS</span>
+    Para establecer alianzas formales, las organizaciones deberán ser apartidistas, autónomas, y no sostener ideologías.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 43. AUTONOMÍA</span>
+    En toda relación externa, se preservará la autonomía e independencia del Grupo KOI.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 40. VOCERÍA</span>
-  Solo personas expresamente designadas podrán fungir como voceras ante medios y plataformas.</p>
 
-  <h2 id="t11">TÍTULO DECIMOPRIMERO<br>RELACIONES CON OTRAS ORGANIZACIONES</h2>
-  <h3>CAPÍTULO 15<br>DE LA VINCULACIÓN</h3>
+  <h2 id="t12">TÍTULO DECIMOSEGUNDO<br>DEL MANEJO DE CRISIS Y CONTINGENCIAS</h2>
+  
+  <h3>CAPÍTULO 17<br>DE LAS SITUACIONES EXTRAORDINARIAS</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 44. CRISIS</span>
+    Se entenderá por crisis toda situación que ponga en riesgo la integridad, imagen o funcionamiento del Grupo KOI.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 45. ATENCIÓN</span>
+    La Coordinación Nacional será la instancia encargada de coordinar la atención y respuesta ante situaciones de crisis o contingencia.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 41. APOYO A PROBLEMÁTICAS</span>
-  KOI podrá solidarizarse con diversas causas sociales sin que ello implique alianzas formales automáticas.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 42. ALIANZAS</span>
-  Para alianzas formales, las organizaciones externas deben ser apartidistas, autónomas y sin ideologías contrarias.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 43. AUTONOMÍA</span>
-  En toda relación externa se preservará la independencia absoluta del Grupo KOI.</p>
-
-  <h2 id="t12">TÍTULO DECIMOSEGUNDO<br>MANEJO DE CRISIS Y CONTINGENCIAS</h2>
-  <h3>CAPÍTULO 16<br>DE LAS SITUACIONES EXTRAORDINARIAS</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 44. CRISIS</span>
-  Toda situación que ponga en riesgo la integridad, imagen o funcionamiento del Grupo.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 45. ATENCIÓN</span>
-  La Coordinación Nacional es la encargada de coordinar la respuesta ante contingencias.</p>
 
   <h2 id="t13">TÍTULO DECIMOTERCERO<br>DE LA PERSPECTIVA DE DERECHOS</h2>
-  <h3>CAPÍTULO 17<br>RESPETO Y NO DISCRIMINACIÓN</h3>
+  
+  <h3>CAPÍTULO 18<br>DE LOS PRINCIPIOS DE RESPETO Y NO DISCRIMINACIÓN</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 46. PERSPECTIVA DE DERECHOS</span>
+    Todas las acciones del Grupo KOI se regirán por una perspectiva de derechos humanos, igualdad y no discriminación.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 47. AMBIENTES SEGUROS</span>
+    El Grupo KOI promoverá espacios libres de violencia, exclusión y discriminación.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 46. PERSPECTIVA DE DERECHOS</span>
-  Todas las acciones se rigen por la igualdad y los derechos humanos.</p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 47. AMBIENTES SEGUROS</span>
-  Se promoverán espacios libres de violencia, exclusión y discriminación.</p>
+  <h2 id="t14">TÍTULO DECIMOCUARTO<br>DE LA AFILIACIÓN, BAJA Y REGISTRO DE INTEGRANTES</h2>
+  
+  <h3>CAPÍTULO 19<br>DE LA AFILIACIÓN</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 48. AFILIACIÓN</span>
+    La afiliación al Grupo KOI será voluntaria y estará abierta a las y los estudiantes que compartan los principios, fines y disposiciones del presente Estatuto.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 49. REQUISITOS DE AFILIACIÓN</span>
+    Para afiliarse al Grupo KOI será necesario manifestar la voluntad de integrarse, comprometerse al cumplimiento del presente Estatuto y registrarse conforme a los lineamientos establecidos por la Coordinación Nacional.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 50. REGISTRO</span>
+    La Coordinación Nacional, a través de las Coordinaciones Estatales y Supervisores, llevará un registro interno de las personas integrantes del Grupo KOI.
+  </p>
+  
+  <h3>CAPÍTULO 20<br>DE LA BAJA</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 51. BAJA VOLUNTARIA</span>
+    Las personas integrantes podrán solicitar su baja del Grupo KOI en cualquier momento, sin necesidad de expresar causa alguna.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 52. BAJA POR SANCIÓN</span>
+    La baja definitiva podrá decretarse como sanción conforme al procedimiento disciplinario establecido en el presente Estatuto.
+  </p>
 
-  <h2 id="t14">TÍTULO DECIMOCUARTO<br>AFILIACIÓN, BAJA Y REGISTRO</h2>
-  <h3>CAPÍTULO 18<br>DE LA AFILIACIÓN</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 48. AFILIACIÓN</span>
-  Voluntaria y abierta a estudiantes que compartan los principios del movimiento.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 49. REQUISITOS</span>
-  Manifestar la voluntad de integrarse, comprometerse con el Estatuto y registrarse formalmente.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 50. REGISTRO</span>
-  La Coordinación Nacional llevará un registro interno a través de las estructuras estatales.</p>
-
-  <h3>CAPÍTULO 19<br>DE LA BAJA</h3>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 51. BAJA VOLUNTARIA</span>
-  Las personas integrantes podrán solicitarla en cualquier momento sin expresar causa.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 52. BAJA POR SANCIÓN</span>
-  Podrá decretarse como resultado de un procedimiento disciplinario.</p>
 
   <h2 id="t15">TÍTULO DECIMOQUINTO<br>DE LAS REFORMAS Y VIGENCIA</h2>
-  <h3>CAPÍTULO 20<br>DE LAS REFORMAS</h3>
+  
+  <h3>CAPÍTULO 21<br>DE LAS REFORMAS</h3>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 53. REFORMAS</span>
+    El presente Estatuto podrá ser reformado conforme a lo establecido en el ARTÍCULO 22 del mismo.
+  </p>
+  
+  <p>
+    <span class="articulo-titulo">ARTÍCULO 54. VIGENCIA</span>
+    El presente Estatuto entrará en vigor a partir de su aprobación por los órganos competentes del Grupo KOI.
+  </p>
 
-  <p><span class="articulo-cabecera">ARTÍCULO 53. REFORMAS</span>
-  El Estatuto podrá ser reformado conforme a las mayorías calificados del Artículo 22.</p>
-
-  <p><span class="articulo-cabecera">ARTÍCULO 54. VIGENCIA</span>
-  Entrará en vigor a partir de su aprobación por los órganos competentes del Grupo KOI.</p>
-
+</div>
 </body>
 </html>
